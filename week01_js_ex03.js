@@ -23,3 +23,26 @@ else if (avgDolphins < avgKoalas)
     console.log("Koalas Team is the winner of the competition")
 else
     console.log("Both of teams have the same average score")
+    // 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a
+    // team only wins if it has a higher score than the other team, and the same time a
+    // score of at least 100 points. Hint: Use a logical operator to test for minimum
+    // score, as well as multiple else-if blocks
+    // Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+var arrDolphins2 = [97, 112, 101]
+var arrKoalas2 = [109, 95, 123]
+var sumDolphins2 = 0
+var sumKoalas2 = 0
+for (const a of arrDolphins2) {
+    sumDolphins2 += a;
+}
+for (const a of arrKoalas2) {
+    sumKoalas2 += a;
+}
+const avgDolphins2 = sumDolphins2 / arrDolphins2.length;
+const avgKoalas2 = sumKoalas2 / arrKoalas2.length;
+if (avgDolphins2 > avgKoalas2 && avgDolphins2 >= 100)
+    console.log("Dolphins Team is the winner of the competition")
+else if (avgDolphins2 < avgKoalas2 && avgKoalas2 >= 100)
+    console.log("Koalas Team is the winner of the competition")
+else
+    console.log("Both of teams have the same average score")
