@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // Store Mark's and John's mass and height in variables
+        var Mark_mass = 60
+        var Mark_height = 1.75
+        var John_mass = 70
+        var John_height = 1.70
+            // Calculate both their BMIs using the formula (you can even implement both versions)
+        Mark_BMI = Mark_mass / Mark_height ** 2
+        John_BMI = John_mass / John_height ** 2
+        console.log(Mark_BMI)
+        console.log(John_BMI)
+            //Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+        var markHigherBMI = 0
+        if (Mark_BMI > John_BMI)
+            markHigherBMI = 1
+        console.log(markHigherBMI ? 'Mark has a higher BMI than John' : 'John has a higher BMI than Mark')
+    </script>
+</body>
+
+</html>
