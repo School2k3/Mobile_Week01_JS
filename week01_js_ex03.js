@@ -46,3 +46,28 @@ else if (avgDolphins2 < avgKoalas2 && avgKoalas2 >= 100)
     console.log("Koalas Team is the winner of the competition")
 else
     console.log("Both of teams have the same average score")
+
+// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+// both teams have the same score and both have a score greater or equal 100
+// points. Otherwise, no team wins the trophy
+// Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+var arrDolphins3 = [97, 112, 101]
+var arrKoalas3 = [109, 95, 106]
+var sumDolphins3 = 0
+var sumKoalas3 = 0
+for (const a of arrDolphins3) {
+    sumDolphins3 += a;
+}
+for (const a of arrKoalas3) {
+    sumKoalas3 += a;
+}
+const avgDolphins3 = sumDolphins3 / arrDolphins3.length;
+const avgKoalas3 = sumKoalas3 / arrKoalas3.length;
+if (avgDolphins3 > avgKoalas3 && avgDolphins3 >= 100)
+    console.log("Dolphins Team is the winner of the competition")
+else if (avgDolphins3 < avgKoalas3 && avgKoalas3 >= 100)
+    console.log("Koalas Team is the winner of the competition")
+else if (avgDolphins3 == avgKoalas3 && avgDolphins3 >= 100 && avgKoalas3 >= 100)
+    console.log("Both of teams have the same average score")
+else
+    console.log("No team wins the trophy")
